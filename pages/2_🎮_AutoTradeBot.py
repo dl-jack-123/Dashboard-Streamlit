@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-@author: PC
-Update Time: 2025-01-04
+@author: DL
+Update Time: 2025-01-25
 """
 import streamlit as st
 from settings import LIGHT, DARK, DEFAULT
@@ -14,24 +14,13 @@ if 'df_color' not in st.session_state:
     st.session_state['df_color'] = 'DarkRed'
 
 st.set_page_config(
-    page_title='Stock Heatmap',
-    page_icon='💹',
+    page_title='Steam Discounts Items',
+    page_icon='🎮',
     layout='wide',
     initial_sidebar_state='expanded'
 )
 st.sidebar.success('Select a demo above to get started.')
 
-# on = st.toggle('Theme Mode', value=st.session_state.theme_mode, help='Light Mode / Dark Mode')
-# if on:
-#     shutil.copy2(DARK, DEFAULT)
-#     st.session_state['theme_mode'] = True
-#     st.session_state['df_color'] = 'DarkRed'
-# else:
-#     shutil.copy2(LIGHT, DEFAULT)
-#     st.session_state['theme_mode'] = False
-#     st.session_state['df_color'] = 'LightSteelBlue'
-
-# --------- content --------- #
 
 st.markdown(
     '''

@@ -1,0 +1,11 @@
+[[pages]]
+path = "Home.py"
+name = "Home"
+icon = "🌐"
+
+[[pages]]
+path = "pages/Stock_Info.py"
+name = "Stock Daily Info"
+icon = "1️⃣"
+
+

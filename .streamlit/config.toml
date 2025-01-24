@@ -1,0 +1,14 @@
+#[server]
+#port = 8502
+#headless = true
+
+[theme]
+base = 'dark'
+primaryColor = '20b2aa'  # 主色調
+#backgroundColor = '#FFFFFF'  # 背景色
+#secondaryBackgroundColor = '#F0F0F0'  # 次背景色
+#textColor = '#000000'  # 文字顏色
+font = 'sans serif' # serif # sans serif # monospace
+
+[logger]
+level = "debug"
