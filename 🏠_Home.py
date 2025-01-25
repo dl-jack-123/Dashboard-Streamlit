@@ -80,6 +80,10 @@ with col2:
             - 基本帳戶資訊偵測 ... etc.
         ''', unsafe_allow_html=True)
 
+st.markdown(f'''
+        ##### :blue-background[3. Job Recommendation AI System]
+        ''', unsafe_allow_html=True)
+
 st.markdown("""
 <style>
 .rainbow-animation {
