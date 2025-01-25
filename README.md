@@ -10,5 +10,5 @@
 2. Run the app
 
    ```
-   $ streamlit run 🏠_Home.py
+   $ streamlit run 🌐_Home.py
    ```

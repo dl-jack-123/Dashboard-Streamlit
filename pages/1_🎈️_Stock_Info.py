@@ -37,6 +37,7 @@ with col2:
         - 系統: 雲端虛擬主機(sugar) + nginx + Django + SQL Server
         - 內容: 依照 20 + 的不同選股條件所挑選出來股票，隔日漲的趨勢較為明顯
         - 廣告: 依照會員與非會員的權限, 呈現是否顯示廣告
+        - 網址: [Gradstock](https://www.grabstock.net/)
     ''', unsafe_allow_html=True)
 
 

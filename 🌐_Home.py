@@ -85,7 +85,7 @@ st.markdown(f'''
         ''', unsafe_allow_html=True)
 
 st.markdown(f'''
-            利用爬蟲去抓取所有人力職缺, 搭配 LLM 推薦最適合或最容易進入面試階段的工作職缺與連結
+            [進行中]利用爬蟲去抓取所有人力職缺, 搭配 LLM 推薦最適合或最容易進入面試階段的工作職缺與連結
         ''', unsafe_allow_html=True)
 st.markdown("""
 <style>
