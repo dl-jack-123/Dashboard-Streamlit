@@ -83,10 +83,15 @@ with col2:
 st.markdown(f'''
         ##### :blue-background[3. 🎎Job Recommendation AI System]
         ''', unsafe_allow_html=True)
+col1, col2 = st.columns([2, 0.75])  # 寬度比例
+with col1:
+    st.markdown(f'''
+                [進行中]利用爬蟲去抓取所有人力職缺, 搭配 LLM 推薦最適合或最容易進入面試階段的工作職缺與連結
+            ''', unsafe_allow_html=True)
 
-st.markdown(f'''
-            [進行中]利用爬蟲去抓取所有人力職缺, 搭配 LLM 推薦最適合或最容易進入面試階段的工作職缺與連結
-        ''', unsafe_allow_html=True)
+with col2:
+    st.image('./source/in_process.png', width=300)
+
 st.markdown("""
 <style>
 .rainbow-animation {
@@ -104,6 +109,43 @@ st.markdown("""
 }
 </style>
 """, unsafe_allow_html=True)
+
+st.markdown(f'''
+        ##### :blue-background[4. 🎈️AI Role with Telegram]
+        ''', unsafe_allow_html=True)
+col1, col2 = st.columns([0.75, 2])  # 寬度比例
+with col1:
+    st.image('./source/home_overview_4.png')
+
+with col2:
+    st.markdown(f'''
+            - 透過預訓練好的角色模型，可以透過 Telegram Bot 進行角色的設定、互動等
+            - 了解 gemini API 基本串接
+            - 簡易使用者操作介面(tg)來呈現互動
+            
+        ''', unsafe_allow_html=True)
+
+st.markdown(f'''
+        ##### :blue-background[99. 🎈️Growing with Backend knowledge]
+        ''', unsafe_allow_html=True)
+col1, col2 = st.columns([2, 0.75])  # 寬度比例
+with col1:
+    st.image('./source/in_process.png')
+
+with col2:
+    st.markdown(f'''
+            - Backend 高流量問題學習
+                - Rate Limiting(express-rate-limit) 防止惡意流量
+                - Redis 儲存 Rate Limit，支援多台機器擴展
+                - PostgreSQL 連線數量控制，防止 DB 超載
+                - 使用快取（Redis 或 memory-cache）減少 DB 查詢
+                - 使用 Queue（Bull） 降低 DB 負載
+                - 開啟 WAF（Cloudflare） 阻擋惡意請求
+                - Helmet 安全強化
+                - 記錄異常流量（winston）
+                - pm2 多進程處理請求
+
+        ''', unsafe_allow_html=True)
 
 st.markdown('<br><br><br>', unsafe_allow_html=True)
 st.caption('<div style="text-align: center"> Streamlit is simply an artifact for Data Scientist.</div>', unsafe_allow_html=True)
