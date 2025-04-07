@@ -126,24 +126,31 @@ with col2:
         ''', unsafe_allow_html=True)
 
 st.markdown(f'''
-        ##### :blue-background[99. 🎈️Growing with Backend knowledge]
+        ##### :blue-background[5. 🎈️客服小幫手 with Line Bot]
         ''', unsafe_allow_html=True)
 col1, col2 = st.columns([2, 0.75])  # 寬度比例
 with col2:
-    st.image('./source/in_process.png', width=300)
+    st.image('./source/home_overview_5.png')
 
 with col1:
     st.markdown(f'''
-            - Backend 高流量問題學習
-                - Rate Limiting(express-rate-limit) 防止惡意流量
-                - Redis 儲存 Rate Limit，支援多台機器擴展
-                - PostgreSQL 連線數量控制，防止 DB 超載
-                - 使用快取（Redis 或 memory-cache）減少 DB 查詢
-                - 使用 Queue（Bull） 降低 DB 負載
-                - 開啟 WAF（Cloudflare） 阻擋惡意請求
-                - Helmet 安全強化
-                - 記錄異常流量（winston）
-                - pm2 多進程處理請求
+            - 目的:利用已建立好的 Q&A 的方式，加上 RAG (增加檢索功能)，達成 AI 小幫手的功能
+            1. 文檔知識庫建立：
+                - 使用 TextLoader 載入文本文件（qa.txt 和 prompt.txt）
+                - 通過 RecursiveCharacterTextSplitter 將文檔切分成較小的文本塊
+                - 使用 HuggingFace 的 "all-MiniLM-L6-v2" 模型進行文本嵌入
+                - 利用 FAISS 向量數據庫存儲文檔的向量表示
+            2. 智能問答系統：
+                - 整合了 Google 的 Gemini-2.0-pro-exp 大語言模型
+                - 使用 RetrievalQA 鏈實現基於檢索的問答功能
+                - 當用戶提問時，系統會：
+                    - 從 FAISS 向量庫中檢索相關文檔片段
+                    - 結合檢索到的上下文，使用 Gemini 生成答案
+            3. Line Bot 整合：
+                - 通過 Line Bot 介面接收用戶訊息
+                - 將用戶問題傳遞給 RAG 系統處理
+                - 將 RAG 系統生成的回答通過 Line Bot 發送給用戶
+                - 同時記錄用戶資訊和對話歷史到數據庫中
 
         ''', unsafe_allow_html=True)
 
