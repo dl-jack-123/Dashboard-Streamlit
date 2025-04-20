@@ -58,7 +58,6 @@ col1, col2 = st.columns([2, 0.75]) # 寬度比例
 with col1:
     st.markdown(f'''
     ##### :blue-background[1. 🎈️Stock Daily Info]
-    
         - 透過股市老師提出的邏輯，抓取上市上櫃的每日行情資料，可以選出隔日較具潛力的商品組合，減少每日花費大量時間在觀察行情走勢上
     ''', unsafe_allow_html=True)
 with col2:
@@ -81,16 +80,19 @@ with col2:
         ''', unsafe_allow_html=True)
 
 st.markdown(f'''
-        ##### :blue-background[3. 🎎Job Recommendation AI System]
+        ##### :blue-background[3. 🎎Airflow + Crawler]
         ''', unsafe_allow_html=True)
 col1, col2 = st.columns([2, 0.75])  # 寬度比例
 with col1:
     st.markdown(f'''
-                [進行中]利用爬蟲去抓取所有人力職缺, 搭配 LLM 推薦最適合或最容易進入面試階段的工作職缺與連結
+                [進行中]
+                - 這是一個包含 7 個資料處理專案。
+                - 使用 requests 和 selenium 技能，並整合 psycopg2 和 SQLAlchemy 進行資料庫操作。
+                - 搭配 PostgreSQL 和 Airflow 進行 ETL 流程。
             ''', unsafe_allow_html=True)
 
 with col2:
-    st.image('./source/in_process.png', width=300)
+    st.image('./source/home_overview_3.png', width=300)
 
 st.markdown("""
 <style>
